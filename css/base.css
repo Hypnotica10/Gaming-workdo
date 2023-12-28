@@ -45,6 +45,7 @@ button {
   cursor: pointer;
   transition: all linear 0.25s;
   font-family: var(--primary-font);
+  user-select: none;
 }
 a,
 a:hover,

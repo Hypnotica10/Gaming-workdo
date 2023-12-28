@@ -1,9 +1,8 @@
 // show dropdown
-// let menuHeaderDropdown = document.querySelectorAll(".menu_item:not(:last-child)>a");
-let menuHeaderDropdown = document.querySelectorAll(".menu_item:not(:last-child)");
+let menuHeaderDropdown = document.querySelectorAll(".menu_item:not(:last-child)>a");
+
 const showDropdown = (e)=> {
-    // let dropdown = e.target.nextElementSibling;
-    let dropdown = e.currentTarget.querySelector("div");
+    let dropdown = e.target.nextElementSibling;
     dropdown.classList.toggle("dropdown_active");
 }
 menuHeaderDropdown.forEach((item)=> {
