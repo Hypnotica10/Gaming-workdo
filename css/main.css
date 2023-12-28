@@ -1,0 +1,136 @@
+.text-gradient {
+  background-image: var(--gradient-color);
+  background-clip: text;
+  color: transparent;
+}
+a span,
+a i {
+  pointer-events: none;
+}
+body {
+  background-color: black;
+}
+/* Style Header */
+.header {
+  background-color: var(--black-color);
+  position: relative;
+}
+.header_top {
+  padding: 20px 0;
+}
+.logo {
+  font-size: calc(27px + (40 - 27) * ((100vw - 320px) / (1400 - 320)));
+  font-weight: bold;
+}
+.logo span {
+  color: var(--secondary-color);
+}
+.menu_header,
+.list_icon {
+  gap: 30px;
+}
+.menu_item_link {
+  padding: 8px 0;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+}
+.menu_item_link::before,
+.pages_dropdown_link::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 1px;
+  background: var(--gradient-color);
+  bottom: 0;
+  right: 0;
+  transition: all linear 0.25s;
+}
+.menu_item_link:hover::before,
+.pages_dropdown_link:hover::before {
+  left: 0;
+  width: 100%;
+}
+.menu_item_link i {
+  font-size: 13px;
+  margin-left: 5px;
+}
+.icon {
+  font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1400 - 320)));
+}
+.icon_cart {
+  gap: 10px;
+}
+.icon_cart span:nth-child(1) {
+  font-size: 13px;
+  font-weight: 600;
+}
+.icon_item,
+.icon_cart span:nth-child(2),
+.pages_dropdown_link {
+  position: relative;
+}
+.cart_counter {
+  position: absolute !important;
+  width: 17px;
+  height: 17px;
+  background: var(--gradient-color);
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.menu_item_dropdown {
+  position: absolute;
+  background-color: var(--white-color);
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0, 0);
+  transition: all linear 0.25s;
+}
+.menu_item_dropdown a {
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  color: var(--black-color);
+}
+.user_dropdown {
+  transform-origin: top right;
+  transition: all linear 0.25s;
+  margin-top: 15px;
+  width: 150px;
+  padding: 15px;
+  right: 0;
+}
+.user_dropdown ul {
+  gap: 5px;
+}
+.pages_dropdown {
+  width: 220px;
+  padding: 20px;
+  transform-origin: top left;
+}
+.pages_dropdown ul {
+  gap: 10px;
+}
+.dropdown_active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1, 1);
+}
+
+
+.accesories_dropdown {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+}
+.accesories_dropdown a {
+    color: black;
+}

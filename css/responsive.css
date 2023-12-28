@@ -1,0 +1,43 @@
+@media screen and (max-width: 575.98px) {
+    
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    
+}
+@media screen and (min-width: 1401px) {
+    
+}
+@media screen and (max-width: 991.98px) {
+    .header_top {
+        padding: 15px 0;
+    }
+    .menu_header {
+        gap: 15px;
+    }
+    .logo_header {
+        text-align: start !important;
+    }
+    .cart_counter {
+        width: 13px;
+        height: 13px;
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .list_icon {
+        margin-left: auto;
+        gap: 15px;
+    }
+    .icon_toggle {
+        margin-right: 15px;
+    }
+}
+
