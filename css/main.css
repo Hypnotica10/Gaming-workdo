@@ -7,9 +7,6 @@ a span,
 a i {
   pointer-events: none;
 }
-body {
-  height: 500vh;
-}
 /* Style Header */
 .header {
   position: fixed;
@@ -79,7 +76,8 @@ body {
 .pages_dropdown_link,
 .form_search div,
 .product_bottom_option div:nth-child(2),
-.tab_wrapper {
+.tab_wrapper,
+.post_top {
   position: relative;
 }
 .header_top .cart_counter {
@@ -331,14 +329,6 @@ body {
   background-color: rgba(0, 0, 0, 0.85);
   z-index: 95;
 }
-.dropdown_active {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1, 1);
-}
-.side_active {
-  transform: translateX(0);
-}
 @keyframes fade {
   0% {
     opacity: 0;
@@ -383,7 +373,8 @@ body {
 .bestsellers .button_transparent,
 .product_bottom_option div:last-child a,
 .button_category,
-.subcribe_button {
+.subcribe_button,
+.blog .button_transparent {
   padding: 12px 40px;
   font-size: 14px !important;
   font-weight: 400;
@@ -410,7 +401,8 @@ body {
 }
 .mySwiper .product_wrapper,
 .mySwiper3 .product_wrapper,
-.about .about_wrapper {
+.about .about_wrapper,
+.testimonials .testimonials_wrapper {
   padding: 15px;
   position: relative;
   background: var(--secondary-gradient-color);
@@ -420,7 +412,8 @@ body {
 }
 .mySwiper .product_wrapper::before,
 .mySwiper3 .product_wrapper::before,
-.about .about_wrapper::before {
+.about .about_wrapper::before,
+.testimonials .testimonials_wrapper::before {
   content: "";
   position: absolute;
   top: 0;
@@ -437,11 +430,12 @@ body {
   -webkit-filter: drop-shadow(0px 4px 10px rgba(82, 86, 219, 0.43));
 }
 .mySwiper .product_wrapper {
-  background-color: black;
+  background-color: var(--black-color);
 }
 .product_cart_name,
 .cart_product_info,
-.name_product {
+.name_product,
+.post_bottom .post_title a {
   display: -webkit-box;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -518,9 +512,12 @@ body {
 .product_bottom_option div:last-child {
   margin-top: 20px;
 }
-.product_bottom_option div:last-child a {
+.product_bottom_option div:last-child a,
+.post_bottom > a {
   padding: 7px 30px;
   border-radius: 0 12px;
+  font-weight: 400;
+  font-size: 14px !important;
 }
 .product_bottom_option div:last-child > div .price {
   font-weight: 600;
@@ -540,9 +537,6 @@ body {
   background-color: var(--border-color);
   border-radius: unset;
 }
-.swiper-pagination-bullet-active {
-  background-image: var(--primary-gradient-color);
-}
 /* Brach CSS*/
 .branch {
   user-select: none;
@@ -558,12 +552,12 @@ body {
   margin: 0;
   width: 35px;
   height: 35px;
-  background-color: #0098ff;
+  background-color: var(--blue-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--white-color);
 }
 .arrow_left {
   top: 50%;
@@ -593,7 +587,6 @@ body {
 .categories_title {
   margin-bottom: 60px;
   line-height: 1;
-  mix-blend-mode: difference;
 }
 .categories_title + div {
   gap: 20px;
@@ -616,13 +609,9 @@ body {
 .tab_content {
   display: none;
 }
-.tab_active {
-  display: block;
-}
-.button_category_active {
-  color: var(--white-color) !important;
-}
-.mySwiper3 .product_wrapper, .about .about_wrapper {
+.mySwiper3 .product_wrapper,
+.about .about_wrapper,
+.testimonials .testimonials_wrapper {
   background-color: var(--white-color);
 }
 .mySwiper3 .product_wrapper .name_product,
@@ -705,4 +694,140 @@ body {
 }
 .about_wrapper p {
   color: var(--primary-color);
+}
+/* Blog CSS */
+.blog {
+  padding: 70px 0;
+  background-color: var(--black-color);
+}
+.blog_title {
+  line-height: 1;
+}
+.blog_top {
+  margin-bottom: 20px;
+}
+.blog_top p {
+  color: var(--border-color);
+}
+.blog .post_top .image {
+  border: 1px solid var(--blue-color);
+  border-radius: 0 12px;
+}
+.post {
+  padding: 10px 10px 30px;
+}
+.blog .post_top .image a {
+  padding-top: 60%;
+}
+.blog .post_top .image img {
+  border-radius: 0 12px;
+}
+.post_top .tag {
+  padding: 3px 10px;
+  text-transform: lowercase;
+  border-radius: 5px;
+  background: var(--primary-gradient-color);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.post_top .date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  line-height: 1;
+}
+.post_bottom .post_title {
+  margin: 20px 0 10px;
+}
+.post_bottom .post_title a {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+}
+.post_bottom .post_author {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  line-height: 1;
+}
+.mySwiper4 .arrow_left, .mySwiper4 .arrow_right, .mySwiper5 .arrow_left, .mySwiper5 .arrow_right {
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.25s;
+}
+.mySwiper4:hover .arrow_left, .mySwiper4:hover .arrow_right, .mySwiper5:hover .arrow_right, .mySwiper5:hover .arrow_left {
+  opacity: 1;
+  visibility: visible;
+}
+/* Footer */
+.footer {
+  padding: 70px 0;
+  background-color: var(--black-color);
+}
+.footer .container div:nth-child(1) h3 {
+  margin: 20px 0 15px;
+  font-size: 26px;
+  font-weight: 500;
+}
+.footer .container div:nth-child(2) div {
+  padding-left: 96px;
+}
+.footer .container div:nth-child(2) h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer .container div:nth-child(2) ul {
+  gap: 8px;
+}
+.icon_list div {
+  padding: 0 !important;
+  gap: 12px ;
+}
+.icon_list div a {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: var(--white-color);
+  color: var(--black-color);
+}
+.icon_list div a:hover {
+  background: var(--primary-gradient-color);
+  color: var(--white-color);
+}
+/* testimonials CSS */
+.testimonials {
+  padding: 70px 0;
+  color: var(--black-color);
+}
+.testimonials .container > div:first-child {
+  margin-bottom: 40px;
+}
+.testimonials .container > div:first-child p {
+  color: var(--primary-color);
+}
+.testimonials .testimonials_wrapper {
+  padding: 0;
+}
+.testimonials_content {
+  padding: 15px;
+}
+.testimonials_content h3 {
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.testimonials_content .testimonials_desc {
+  color: var(--black-color);
+  margin-bottom: 15px;
+}
+.testimonials_desc + div > div:first-child {
+  gap: 15px ;
+}
+.testimonials .name {
+  font-weight: 600;
+}
+.testimonials .testimonials_wrapper .image_product {
+  width: 150px;
+  height: 150px;
 }

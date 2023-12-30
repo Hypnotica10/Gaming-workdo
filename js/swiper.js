@@ -1,5 +1,5 @@
-var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
+var swiper = new Swiper('.mySwiper', {
+    effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,   
     coverflowEffect: {
@@ -11,7 +11,7 @@ var swiper = new Swiper(".mySwiper", {
         scale: 0.9,
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: '.swiper-pagination',
         clickable: true,
     },
     loop: true,
@@ -42,10 +42,10 @@ var swiper = new Swiper(".mySwiper", {
         }
     }
 });
-var swiper = new Swiper(".mySwiper2", {
+var swiper = new Swiper('.mySwiper2', {
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
     loop: true,
     breakpoints: {
@@ -63,10 +63,10 @@ var swiper = new Swiper(".mySwiper2", {
         },
     }
 });
-var swiper = new Swiper(".mySwiper3", {
+var swiper = new Swiper('.mySwiper3', {
     spaceBetween: 20,
     scrollbar: {
-        el: ".swiper-scrollbar",
+        el: '.swiper-scrollbar',
     },
     breakpoints: {
         1200: {
@@ -83,3 +83,45 @@ var swiper = new Swiper(".mySwiper3", {
         }
     }
 });
+
+var swiper = new Swiper('.mySwiper4', {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        1200: {
+            slidesPerView: 4,
+        },
+        768: {
+            slidesPerView: 3,
+            loop: true,
+        },
+        576: {
+            slidesPerView: 2,
+            loop: true,
+        },
+        320: {
+            slidesPerView: 1,
+            loop: true,
+        }
+    }
+})
+var swiper = new Swiper(".mySwiper5", {
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+    }
+});
+var swiper = n

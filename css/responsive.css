@@ -13,6 +13,16 @@
   .subcribe_left input {
     font-size: 13px;
   }
+  .blog .blog_title {
+    margin-bottom: 20px;
+  }
+  .post_bottom > a,
+  .product_bottom_option div:last-child a {
+    font-size: 12px !important;
+  }
+  .footer .container div:nth-child(2) h4 {
+    margin-bottom: 12px;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
 }
@@ -68,11 +78,15 @@
   .bestsellers,
   .branch,
   .subcribe,
-  .about {
+  .about,
+  .blog,
+  .footer, .testimonials {
     padding-bottom: 40px;
   }
   .categories,
-  .subcribe {
+  .subcribe,
+  .blog,
+  .footer, .testimonials {
     padding-top: 40px;
   }
   .product_bottom_option .button_gradient {
@@ -97,9 +111,33 @@
   .subcribe .image {
     margin-bottom: 30px;
   }
+  .footer .container div:nth-child(2) > div {
+    margin-top: 30px;
+    padding: 0;
+  }
 }
 @media screen and (max-width: 1199.98px) {
-  .about_wrapper:first-child, .about_wrapper:nth-child(2) {
+  .about_wrapper:first-child,
+  .about_wrapper:nth-child(2) {
     margin-bottom: 25px;
   }
+}
+
+/* active */
+.dropdown_active {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1, 1);
+}
+.side_active {
+  transform: translateX(0);
+}
+.button_category_active {
+  color: var(--white-color) !important;
+}
+.tab_active {
+  display: block;
+}
+.swiper-pagination-bullet-active {
+  background-image: var(--primary-gradient-color);
 }
