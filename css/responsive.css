@@ -87,7 +87,8 @@
   }
   .banner,
   .login,
-  .register {
+  .register,
+  .search_page_banner {
     padding: 90px 0 50px;
   }
   .bestsellers,

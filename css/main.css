@@ -78,7 +78,8 @@ a i {
 .product_bottom_option div:nth-child(2),
 .tab_wrapper,
 .post_top,
-.header_top {
+.header_top,
+.search_form .container form div {
   position: relative;
 }
 .header_top .cart_counter {
@@ -346,7 +347,8 @@ a i {
 /* Banner CSS */
 .banner,
 .login,
-.register {
+.register,
+.search_page_banner {
   padding: 210px 0 50px;
   background-color: var(--black-color);
 }
@@ -657,7 +659,7 @@ a i {
   margin: 15px 0;
   color: var(--black-color);
 }
-.subcribe_left div:nth-child(2) {
+.subcribe_left div:nth-child(2), .search_page_banner .container > div div:first-child {
   margin-bottom: 25px;
 }
 .subcribe_left input {
@@ -856,7 +858,8 @@ a i {
   margin-bottom: 40px;
 }
 .login_top > div,
-.register_top > div {
+.register_top > div,
+.search_page_banner .container > div div:first-child {
   gap: 20px;
 }
 .login_top > div span {
@@ -917,4 +920,29 @@ a i {
   color: red;
   text-decoration: underline;
   font-weight: 500;
+}
+.search_page_banner .search_page_title {
+  margin-bottom: 12px;
+}
+.search_form {
+  padding-top: 40px;
+  min-height: 50vh;
+}
+.button_search {
+  font-size: 18px;
+  height: 90%;
+  position: absolute;
+  padding: 0 15px;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
