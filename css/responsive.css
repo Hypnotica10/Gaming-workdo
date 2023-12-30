@@ -6,7 +6,8 @@
   .button_transparent {
     padding: 10px 16px !important;
   }
-  .login .form_container .button_gradient {
+  .login .form_container .button_gradient,
+  .register .form_container .button_gradient {
     padding: 10px 40px !important;
   }
   .bestsellers .container .button_transparent {
@@ -84,7 +85,9 @@
   .button_banner a:first-child {
     margin: 0 0 12px 0;
   }
-  .banner, .login {
+  .banner,
+  .login,
+  .register {
     padding: 90px 0 50px;
   }
   .bestsellers,
@@ -92,13 +95,15 @@
   .subcribe,
   .about,
   .blog,
-  .footer, .testimonials {
+  .footer,
+  .testimonials {
     padding-bottom: 40px;
   }
   .categories,
   .subcribe,
   .blog,
-  .footer, .testimonials {
+  .footer,
+  .testimonials {
     padding-top: 40px;
   }
   .product_bottom_option .button_gradient {
@@ -120,12 +125,22 @@
   .categories_title {
     margin-bottom: 30px;
   }
-  .subcribe .image {
+  .subcribe .image,
+  .login_top,
+  .register_top {
     margin-bottom: 30px;
   }
   .footer .container div:nth-child(2) > div {
     margin-top: 30px;
     padding: 0;
+  }
+  .register
+    .form_wrapper
+    form
+    .form_container:nth-child(3)
+    div
+    > div:first-child {
+    margin-bottom: 15px;
   }
 }
 /* active */

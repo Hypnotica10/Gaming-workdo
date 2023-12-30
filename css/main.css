@@ -345,7 +345,8 @@ a i {
 }
 /* Banner CSS */
 .banner,
-.login {
+.login,
+.register {
   padding: 210px 0 50px;
   background-color: var(--black-color);
 }
@@ -380,7 +381,8 @@ a i {
 .button_category,
 .subcribe_button,
 .blog .button_transparent,
-.login .form_container .button_gradient {
+.login .form_container .button_gradient,
+.register .form_container .button_gradient {
   padding: 12px 40px;
   font-size: 14px !important;
   font-weight: 400;
@@ -618,7 +620,8 @@ a i {
 .mySwiper3 .product_wrapper,
 .about .about_wrapper,
 .testimonials .testimonials_wrapper,
-.login {
+.login,
+.register {
   background-color: var(--white-color);
 }
 .mySwiper3 .product_wrapper .name_product,
@@ -664,7 +667,9 @@ a i {
   border-bottom-left-radius: 0;
   padding: 0;
 }
-.subcribe_button:hover, .login .submit_btn_login, .login .register_btn {
+.subcribe_button:hover,
+.login .submit_btn_login,
+.login .register_btn {
   background-color: none;
   background-image: var(--primary-gradient-color);
   color: var(--white-color);
@@ -845,11 +850,13 @@ a i {
   height: 150px;
 }
 /* Login */
-.login_top {
+.login_top,
+.register_top {
   color: var(--black-color);
   margin-bottom: 40px;
 }
-.login_top > div {
+.login_top > div,
+.register_top > div {
   gap: 20px;
 }
 .login_top > div span {
@@ -861,37 +868,49 @@ a i {
   border: 1px solid var(--border-color);
   border-radius: 50%;
 }
-.login_title {
+.login_title,
+.register_title {
   margin-top: 20px;
   font-weight: 500;
 }
-.login .form_wrapper {
+.login .form_wrapper,
+.register .form_wrapper {
   border: 1px solid var(--border-color);
 }
-.login .form_wrapper form h4 {
-  padding: 20px;
+.login .form_wrapper form h4,
+.register .form_wrapper form h4 {
   font-size: 18px;
   font-weight: 600;
   color: var(--primary-color);
 }
-.login .form_wrapper form .form_container {
+.login .form_wrapper form h4,
+.register .form_wrapper form > h4 {
+  padding: 20px;
+}
+.login .form_wrapper form .form_container,
+.register .form_wrapper form .form_container {
   border-top: 1px solid var(--border-color);
   padding: 20px;
   color: var(--primary-color);
 }
-.login .form_wrapper form .form_container:nth-child(2) > div {
+.login .form_wrapper form .form_container:nth-child(2) > div:not(:last-child),
+.register .form_wrapper form .form_container:nth-child(3) > h4,
+.register .form_wrapper form .form_container:not(:nth-child(3)) > div:not(:last-child) {
   margin-bottom: 15px;
 }
-.login .form_wrapper form .form_container label {
+.login .form_wrapper form .form_container label,
+.register .form_wrapper form .form_container label {
   margin-bottom: 10px;
   font-weight: 500;
   gap: 3px;
 }
-.login .form_wrapper form .form_container label sup {
+.login .form_wrapper form .form_container label sup,
+.register .form_wrapper form .form_container label sup {
   color: red;
   font-size: 12px;
 }
-.login .form_wrapper form .form_container:nth-child(3), .login .form_wrapper form .form_container:nth-child(4) {
+.login .form_wrapper form .form_container:nth-child(3),
+.login .form_wrapper form .form_container:nth-child(4) {
   gap: 15px;
 }
 .login .form_wrapper form .form_container:nth-child(3) a {
