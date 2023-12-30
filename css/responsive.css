@@ -9,6 +9,10 @@
   .bestsellers .container .button_transparent {
     margin-top: 20px;
   }
+  .subcribe_button,
+  .subcribe_left input {
+    font-size: 13px;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
 }
@@ -63,10 +67,12 @@
   }
   .bestsellers,
   .branch,
-  .categories {
+  .subcribe,
+  .about {
     padding-bottom: 40px;
   }
-  .categories {
+  .categories,
+  .subcribe {
     padding-top: 40px;
   }
   .product_bottom_option .button_gradient {
@@ -78,13 +84,22 @@
   .button_category {
     width: 290px;
   }
-  .categories > .container .categories_slider div:first-child {
+  .categories > .container .categories_slider_left div:nth-child(2) {
     padding-right: 0;
   }
   .categories_title {
     text-align: center;
   }
-  .categories_title + div, .categories_title {
+  .categories_title + div,
+  .categories_title {
     margin-bottom: 30px;
+  }
+  .subcribe .image {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .about_wrapper:first-child, .about_wrapper:nth-child(2) {
+    margin-bottom: 25px;
   }
 }

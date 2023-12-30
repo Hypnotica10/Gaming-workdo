@@ -308,7 +308,8 @@ body {
 .banner_tagline,
 .banner .banner_title,
 .banner .banner_desc,
-.bestsellers > div {
+.bestsellers > div,
+.about_top {
   margin-bottom: 20px;
 }
 .proceed_checkout {
@@ -381,7 +382,8 @@ body {
 .button_banner a,
 .bestsellers .button_transparent,
 .product_bottom_option div:last-child a,
-.button_category {
+.button_category,
+.subcribe_button {
   padding: 12px 40px;
   font-size: 14px !important;
   font-weight: 400;
@@ -407,7 +409,8 @@ body {
   padding: 60px 0 30px;
 }
 .mySwiper .product_wrapper,
-.mySwiper3 .product_wrapper {
+.mySwiper3 .product_wrapper,
+.about .about_wrapper {
   padding: 15px;
   position: relative;
   background: var(--secondary-gradient-color);
@@ -416,7 +419,8 @@ body {
   border-radius: 0 12px 0 12px;
 }
 .mySwiper .product_wrapper::before,
-.mySwiper3 .product_wrapper::before {
+.mySwiper3 .product_wrapper::before,
+.about .about_wrapper::before {
   content: "";
   position: absolute;
   top: 0;
@@ -579,16 +583,17 @@ body {
 /* Category CSS */
 .categories {
   position: relative;
-  padding: 70px 0;
+  padding: 70px 0 0;
   margin-top: -220px;
   z-index: 1;
 }
-.categories .container .categories_slider div:first-child {
+.categories .container .categories_slider_left div:nth-child(2) {
   padding-right: 15px;
 }
 .categories_title {
   margin-bottom: 60px;
   line-height: 1;
+  mix-blend-mode: difference;
 }
 .categories_title + div {
   gap: 20px;
@@ -617,10 +622,11 @@ body {
 .button_category_active {
   color: var(--white-color) !important;
 }
-.mySwiper3 .product_wrapper {
+.mySwiper3 .product_wrapper, .about .about_wrapper {
   background-color: var(--white-color);
 }
-.mySwiper3 .product_wrapper .name_product, .mySwiper3 .product_wrapper .product_bottom_option {
+.mySwiper3 .product_wrapper .name_product,
+.mySwiper3 .product_wrapper .product_bottom_option {
   color: var(--black-color);
 }
 .swiper-scrollbar.swiper-scrollbar-horizontal {
@@ -631,4 +637,72 @@ body {
   background-image: var(--primary-gradient-color);
   opacity: 0.62;
 }
-
+/*subcribe CSS */
+.subcribe {
+  padding: 70px 0;
+  color: var(--primary-color);
+  position: relative;
+}
+.subcribe_tag {
+  padding: 3px 10px;
+  background-image: var(--primary-gradient-color);
+  opacity: 0.5;
+  color: var(--white-color);
+  border-radius: 5px;
+}
+.subcribe_left {
+  position: relative;
+}
+.subcribe_left h2 {
+  line-height: 1;
+  margin: 15px 0;
+  color: var(--black-color);
+}
+.subcribe_left div:nth-child(2) {
+  margin-bottom: 25px;
+}
+.subcribe_left input {
+  border-top-right-radius: 0;
+}
+.subcribe_button {
+  border-bottom-left-radius: 0;
+  padding: 0;
+}
+.subcribe_button:hover {
+  background-color: none;
+  background-image: var(--primary-gradient-color);
+  color: var(--white-color);
+}
+/* About CSS */
+.about {
+  padding-bottom: 70px;
+  color: var(--black-color);
+}
+.about .container:nth-child(2) {
+  padding: 0;
+}
+.about_bottom > div {
+  padding: 0 15px;
+}
+.about_title {
+  margin-bottom: 10px;
+}
+.about .about_wrapper {
+  padding: 20px 15px;
+  border-radius: 0 20px;
+}
+.about_wrapper h3 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.about_wrapper h4 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.about_wrapper p {
+  color: var(--primary-color);
+}

@@ -132,6 +132,13 @@ textarea {
   color: var(--white-color);
   background-image: var(--primary-gradient-color);
 }
+input {
+  font-size: 14px;
+  color: var(--black-color);
+  padding: 12px 15px;
+  border-radius: 0 20px;
+  border: 1px solid var(--border-color);
+}
 h2 {
   font-size: calc(28px + (40 - 28) * ((100vw - 320px) / (1320 - 320)));
   font-weight: 500;
