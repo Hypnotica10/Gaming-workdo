@@ -124,4 +124,3 @@ var swiper = new Swiper(".mySwiper5", {
         },
     }
 });
-var swiper = n

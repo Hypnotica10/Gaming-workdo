@@ -77,7 +77,8 @@ a i {
 .form_search div,
 .product_bottom_option div:nth-child(2),
 .tab_wrapper,
-.post_top {
+.post_top,
+.header_top {
   position: relative;
 }
 .header_top .cart_counter {
@@ -125,6 +126,9 @@ a i {
   padding: 20px;
   transform-origin: top left;
 }
+.user_dropdown_link {
+  line-height: 1.5;
+}
 .accesories_dropdown {
   width: 100%;
   top: 100%;
@@ -144,7 +148,7 @@ a i {
 .header_bottom {
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-  transition: all linear 0.25s;
+  transition: all linear 0.15s;
   position: relative;
 }
 .header_bottom .container {
@@ -340,7 +344,8 @@ a i {
   }
 }
 /* Banner CSS */
-.banner {
+.banner,
+.login {
   padding: 210px 0 50px;
   background-color: var(--black-color);
 }
@@ -374,7 +379,8 @@ a i {
 .product_bottom_option div:last-child a,
 .button_category,
 .subcribe_button,
-.blog .button_transparent {
+.blog .button_transparent,
+.login .form_container .button_gradient {
   padding: 12px 40px;
   font-size: 14px !important;
   font-weight: 400;
@@ -611,7 +617,8 @@ a i {
 }
 .mySwiper3 .product_wrapper,
 .about .about_wrapper,
-.testimonials .testimonials_wrapper {
+.testimonials .testimonials_wrapper,
+.login {
   background-color: var(--white-color);
 }
 .mySwiper3 .product_wrapper .name_product,
@@ -657,7 +664,7 @@ a i {
   border-bottom-left-radius: 0;
   padding: 0;
 }
-.subcribe_button:hover {
+.subcribe_button:hover, .login .submit_btn_login, .login .register_btn {
   background-color: none;
   background-image: var(--primary-gradient-color);
   color: var(--white-color);
@@ -750,12 +757,18 @@ a i {
   margin-bottom: 15px;
   line-height: 1;
 }
-.mySwiper4 .arrow_left, .mySwiper4 .arrow_right, .mySwiper5 .arrow_left, .mySwiper5 .arrow_right {
+.mySwiper4 .arrow_left,
+.mySwiper4 .arrow_right,
+.mySwiper5 .arrow_left,
+.mySwiper5 .arrow_right {
   opacity: 0;
   visibility: hidden;
   transition: all linear 0.25s;
 }
-.mySwiper4:hover .arrow_left, .mySwiper4:hover .arrow_right, .mySwiper5:hover .arrow_right, .mySwiper5:hover .arrow_left {
+.mySwiper4:hover .arrow_left,
+.mySwiper4:hover .arrow_right,
+.mySwiper5:hover .arrow_right,
+.mySwiper5:hover .arrow_left {
   opacity: 1;
   visibility: visible;
 }
@@ -782,7 +795,7 @@ a i {
 }
 .icon_list div {
   padding: 0 !important;
-  gap: 12px ;
+  gap: 12px;
 }
 .icon_list div a {
   width: 30px;
@@ -822,7 +835,7 @@ a i {
   margin-bottom: 15px;
 }
 .testimonials_desc + div > div:first-child {
-  gap: 15px ;
+  gap: 15px;
 }
 .testimonials .name {
   font-weight: 600;
@@ -830,4 +843,59 @@ a i {
 .testimonials .testimonials_wrapper .image_product {
   width: 150px;
   height: 150px;
+}
+/* Login */
+.login_top {
+  color: var(--black-color);
+  margin-bottom: 40px;
+}
+.login_top > div {
+  gap: 20px;
+}
+.login_top > div span {
+  color: var(--primary-color);
+}
+.icon_back_shop {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+}
+.login_title {
+  margin-top: 20px;
+  font-weight: 500;
+}
+.login .form_wrapper {
+  border: 1px solid var(--border-color);
+}
+.login .form_wrapper form h4 {
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.login .form_wrapper form .form_container {
+  border-top: 1px solid var(--border-color);
+  padding: 20px;
+  color: var(--primary-color);
+}
+.login .form_wrapper form .form_container:nth-child(2) > div {
+  margin-bottom: 15px;
+}
+.login .form_wrapper form .form_container label {
+  margin-bottom: 10px;
+  font-weight: 500;
+  gap: 3px;
+}
+.login .form_wrapper form .form_container label sup {
+  color: red;
+  font-size: 12px;
+}
+.login .form_wrapper form .form_container:nth-child(3), .login .form_wrapper form .form_container:nth-child(4) {
+  gap: 15px;
+}
+.login .form_wrapper form .form_container:nth-child(3) a {
+  color: red;
+  text-decoration: underline;
+  font-weight: 500;
 }
